@@ -23,7 +23,7 @@ const Letters = () => {
     formData.append('htmlFile', htmlFile);
 
     try {
-      const response = await fetch('http://localhost:3000/api/letters', {
+      const response = await fetch('http://80.97.124.100:3000/api/letters', {
         method: 'POST',
         body: formData
       });

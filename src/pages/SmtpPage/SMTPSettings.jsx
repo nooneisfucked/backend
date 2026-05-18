@@ -33,7 +33,7 @@ const SMTPSettings = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/api/smtp', {
+      const response = await fetch('http://80.97.124.100:3000/api/smtp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ host, port: parseInt(port), user, pass, isActive: true })
