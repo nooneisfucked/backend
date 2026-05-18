@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import useFetch from '../../hooks/useFetch';
 
 const Letters = () => {
-  const { data: letters, loading, refetch } = useFetch('http://localhost:3000/api/letters');
+const { data: letters, loading, refetch } = useFetch('http://80.97.124.100:3000/api/letters');
   const [name, setName] = useState('');
   const [subject, setSubject] = useState('');
   const [htmlFile, setHtmlFile] = useState(null);
